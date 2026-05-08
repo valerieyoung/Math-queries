@@ -1,8 +1,6 @@
-<div align="center">
-  <img width="1200" height="475" alt="Radiant Intellect Banner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
 </div>
 
-<h1 align="center">Radiant Intellect</h1>
+<h1 align="center">Math Queries</h1>
 
 <p align="center">
   An AI-powered frontend for turning math problems into visual explanation videos.
