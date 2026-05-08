@@ -36,7 +36,6 @@ Instead of behaving like a generic chatbot, it is designed as a structured learn
 
 The long-term product direction is:
 
-```text
 math problem
 -> AI explanation planning
 -> visual teaching structure
