@@ -1,4 +1,4 @@
-# Radiant Intellect
+# Math Queries
 
 An AI-powered frontend prototype for turning math problems into structured, visual, and reviewable explanation videos.
 
