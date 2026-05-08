@@ -28,178 +28,241 @@ math problem
 -> visual teaching structure
 -> video generation
 -> reusable lesson history
+```
+
 This repository currently focuses on the frontend experience for that workflow.
 
-Why This Project
+### Why This Project
+
 Most AI math tools stop at giving an answer.
 
 Radiant Intellect is built around a different goal:
 
-explain the reasoning step by step
-make the explanation visual
-support repetition and review
-make the result feel like a mini lesson rather than a one-shot reply
+- explain the reasoning step by step
+- make the explanation visual
+- support repetition and review
+- make the result feel like a mini lesson rather than a one-shot reply
+
 The frontend is designed to support a future backend capable of generating:
 
-explanation scripts
-structured teaching steps
-formula breakdowns
-visual layouts
-final math explanation videos
-Features
-Problem-to-Lesson Entry
+- explanation scripts
+- structured teaching steps
+- formula breakdowns
+- visual layouts
+- final math explanation videos
+
+### Features
+
+#### Problem-to-Lesson Entry
+
 Users can start a new explanation flow by:
 
-uploading a file
-taking a photo
-dragging and dropping an image or document
-entering a structured query
-Historical Question Search
+- uploading a file
+- taking a photo
+- dragging and dropping an image or document
+- entering a structured query
+
+#### Historical Question Search
+
 The dashboard includes filters for:
 
-educational level
-question type
-searchable academic topics
-Video Generation Task Tracking
+- educational level
+- question type
+- searchable academic topics
+
+#### Video Generation Task Tracking
+
 The UI includes an active task area for:
 
-in-progress lesson generation
-rendering progress
-queued or partial generation states
-Collections and Question Bank
+- in-progress lesson generation
+- rendering progress
+- queued or partial generation states
+
+#### Collections and Question Bank
+
 Users can save and organize problems into a reusable personal repository with:
 
-category labels
-difficulty tags
-progress indicators
-recommendation cards
-Study History
+- category labels
+- difficulty tags
+- progress indicators
+- recommendation cards
+
+#### Study History
+
 The study history page is designed for reviewing previous outputs, including:
 
-in-progress lessons
-completed learning items
-replay and review actions
-topic-based browsing
-Personalized Learning Settings
+- in-progress lessons
+- completed learning items
+- replay and review actions
+- topic-based browsing
+
+#### Personalized Learning Settings
+
 Users can configure:
 
-learner identity
-grade level
-exam region
-learning mode
-explanation depth
-Example Use Cases
-Algebra Lesson Generation
+- learner identity
+- grade level
+- exam region
+- learning mode
+- explanation depth
+
+### Example Use Cases
+
+#### Algebra Lesson Generation
+
 A student uploads a quadratic equation problem and the system is intended to provide:
 
-a step-by-step factorization explanation
-a structured visual breakdown
-a saved lesson for later review
-Calculus Revision Workflow
+- a step-by-step factorization explanation
+- a structured visual breakdown
+- a saved lesson for later review
+
+#### Calculus Revision Workflow
+
 A learner searches for derivative or integral questions, then:
 
-compares similar problems
-generates explanation flows
-stores lessons in a reviewable history
-Handwritten Homework Support
+- compares similar problems
+- generates explanation flows
+- stores lessons in a reviewable history
+
+#### Handwritten Homework Support
+
 A user photographs handwritten notes or exercises and uses the interface as the starting point for:
 
-AI interpretation
-solution planning
-future lesson video generation
-Personalized Learning Paths
+- AI interpretation
+- solution planning
+- future lesson video generation
+
+#### Personalized Learning Paths
+
 A beginner can choose a slower, more detailed explanation mode, while an advanced learner can switch to concise review mode.
 
-Current Pages
-Dashboard
+### Current Pages
 
-new inquiry flow
-upload actions
-search
-active generation tasks
-recommended math content
-Collections
+- `Dashboard`
+  - new inquiry flow
+  - upload actions
+  - search
+  - active generation tasks
+  - recommended math content
 
-personal math problem library
-topic and difficulty filters
-reusable saved content
-Study History
+- `Collections`
+  - personal math problem library
+  - topic and difficulty filters
+  - reusable saved content
 
-generated lessons
-progress tracking
-replay and review actions
-Settings
+- `Study History`
+  - generated lessons
+  - progress tracking
+  - replay and review actions
 
-learner profile
-academic level selection
-explanation style
-reasoning depth preferences
-Tech Stack
-React 19
-TypeScript
-Vite
-React Router
-Tailwind CSS
-Lucide React
-Motion
-Gemini SDK (@google/genai)
-Project Status
-Implemented
-polished multi-page frontend
-dashboard for new math inquiries
-collection management UI
-study history UI
-learner settings UI
-task and video-oriented product structure
-Planned
-OCR for handwritten math input
-AI problem parsing
-explanation planning
-step-by-step teaching structure generation
-math visualization rendering
-lesson video generation
-persistent user data and saved lessons
+- `Settings`
+  - learner profile
+  - academic level selection
+  - explanation style
+  - reasoning depth preferences
+
+### Tech Stack
+
+- React 19
+- TypeScript
+- Vite
+- React Router
+- Tailwind CSS
+- Lucide React
+- Motion
+- Gemini SDK (`@google/genai`)
+
+### Project Status
+
+#### Implemented
+
+- polished multi-page frontend
+- dashboard for new math inquiries
+- collection management UI
+- study history UI
+- learner settings UI
+- task and video-oriented product structure
+
+#### Planned
+
+- OCR for handwritten math input
+- AI problem parsing
+- explanation planning
+- step-by-step teaching structure generation
+- math visualization rendering
+- lesson video generation
+- persistent user data and saved lessons
+
 This repository is currently best understood as a frontend prototype for a math explanation video product.
 
-Getting Started
-Prerequisites
-Node.js
-npm
-Install dependencies
-npm install
-Configure environment variables
-Create a .env.local file:
+### Getting Started
 
+#### Prerequisites
+
+- Node.js
+- npm
+
+#### Install dependencies
+
+```bash
+npm install
+```
+
+#### Configure environment variables
+
+Create a `.env.local` file:
+
+```bash
 GEMINI_API_KEY=your_gemini_api_key
 APP_URL=http://localhost:3000
-See .env.example for reference.
+```
 
-Run locally
+See `.env.example` for reference.
+
+#### Run locally
+
+```bash
 npm run dev
+```
+
 The app will run at:
 
+```bash
 http://localhost:3000
-Build for production
+```
+
+#### Build for production
+
+```bash
 npm run build
-Preview production build
+```
+
+#### Preview production build
+
+```bash
 npm run preview
-Available Scripts
-npm run dev
-Start the local development server
+```
 
-npm run build
-Build the app for production
+### Available Scripts
 
-npm run preview
-Preview the production build locally
+- `npm run dev`  
+  Start the local development server
 
-npm run clean
-Remove build output
+- `npm run build`  
+  Build the app for production
 
-npm run lint
-Run TypeScript type checking
+- `npm run preview`  
+  Preview the production build locally
 
-Project Structure
+- `npm run clean`  
+  Remove build output
+
+- `npm run lint`  
+  Run TypeScript type checking
+
+### Project Structure
+
+```text
 src/
   components/
     Layout.tsx
@@ -211,230 +274,308 @@ src/
   App.tsx
   main.tsx
   index.css
-Roadmap
+```
+
+### Roadmap
+
 Potential next steps:
 
-connect image upload to OCR
-add math problem parsing
-generate structured explanation plans
-render explanation steps as math visuals
-connect to a video generation backend
-save generated lessons to history
-add teacher and student collaboration workflows
-Contributing
+- connect image upload to OCR
+- add math problem parsing
+- generate structured explanation plans
+- render explanation steps as math visuals
+- connect to a video generation backend
+- save generated lessons to history
+- add teacher and student collaboration workflows
+
+### Contributing
+
 Contributions are welcome.
 
 You can contribute in areas such as:
 
-UI refinement
-accessibility improvements
-mobile responsiveness
-backend integration
-math workflow design
-lesson and video generation pipeline integration
+- UI refinement
+- accessibility improvements
+- mobile responsiveness
+- backend integration
+- math workflow design
+- lesson and video generation pipeline integration
+
 Recommended contribution flow:
 
-Fork the repository
-Create a feature branch
-Make your changes
-Open a pull request
-License
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Open a pull request
+
+### License
+
 Add your preferred license here.
 
-Acknowledgements
+### Acknowledgements
+
 Originally scaffolded from an AI Studio app template and expanded into a math-focused learning and video-generation frontend concept.
 
-中文
-项目简介
+---
+
+## 中文
+
+### 项目简介
+
 Radiant Intellect 是一个面向“数学题讲解视频平台”的前端原型。
 
 它不是一个普通聊天机器人页面，而是一个更偏结构化学习工作台的产品形态。用户可以在这里：
 
-上传或输入数学题
-搜索相似历史题目
-将题目整理到收藏集
-回看已经生成过的讲解内容
-配置讲解深度和学习偏好
+- 上传或输入数学题
+- 搜索相似历史题目
+- 将题目整理到收藏集
+- 回看已经生成过的讲解内容
+- 配置讲解深度和学习偏好
+
 这个产品的长期目标是：
 
+```text
 数学题输入
 -> AI 讲解规划
 -> 可视化教学结构
 -> 视频生成
 -> 讲解历史复用
+```
+
 目前这个仓库主要聚焦于这条链路的前端体验。
 
-为什么做这个项目
+### 为什么做这个项目
+
 很多 AI 数学工具只停留在“给答案”。
 
 Radiant Intellect 想解决的是另一类问题：
 
-按步骤讲清楚推理过程
-用更可视化的方式呈现讲解
-支持回看和复习
-让最终结果更像一节迷你课程，而不只是一次回答
+- 按步骤讲清楚推理过程
+- 用更可视化的方式呈现讲解
+- 支持回看和复习
+- 让最终结果更像一节迷你课程，而不只是一次回答
+
 这个前端是为未来的后端能力预留入口的，未来可以接入：
 
-讲解脚本生成
-步骤化教学结构生成
-公式拆解
-视觉布局生成
-数学讲解视频生成
-核心功能
-数学题输入入口
+- 讲解脚本生成
+- 步骤化教学结构生成
+- 公式拆解
+- 视觉布局生成
+- 数学讲解视频生成
+
+### 核心功能
+
+#### 数学题输入入口
+
 用户可以通过以下方式发起新的讲解任务：
 
-上传文件
-拍照上传
-拖拽图片或文档
-输入结构化查询
-历史题目搜索
+- 上传文件
+- 拍照上传
+- 拖拽图片或文档
+- 输入结构化查询
+
+#### 历史题目搜索
+
 Dashboard 提供了筛选和搜索能力，包括：
 
-学段
-题型
-学术主题搜索
-视频生成任务追踪
+- 学段
+- 题型
+- 学术主题搜索
+
+#### 视频生成任务追踪
+
 界面中预留了任务进度区，用于展示：
 
-正在生成的讲解任务
-渲染进度
-排队中或处理中状态
-题目收藏与题库
+- 正在生成的讲解任务
+- 渲染进度
+- 排队中或处理中状态
+
+#### 题目收藏与题库
+
 用户可以把题目保存到自己的题库中，支持：
 
-分类标签
-难度标签
-进度状态
-推荐内容卡片
-学习历史
+- 分类标签
+- 难度标签
+- 进度状态
+- 推荐内容卡片
+
+#### 学习历史
+
 Study History 页面用于回顾过去生成的内容，包括：
 
-进行中的讲解
-已完成的课程
-视频回看
-按主题筛选
-个性化讲解设置
+- 进行中的讲解
+- 已完成的课程
+- 视频回看
+- 按主题筛选
+
+#### 个性化讲解设置
+
 Settings 页面支持用户调整：
 
-学习者身份
-年级或阶段
-考试区域
-学习模式
-讲解深度
-使用场景
-代数题讲解
+- 学习者身份
+- 年级或阶段
+- 考试区域
+- 学习模式
+- 讲解深度
+
+### 使用场景
+
+#### 代数题讲解
+
 学生上传一道一元二次方程题，系统未来可以生成：
 
-因式分解的逐步讲解
-每一步的可视化展示
-可回看的课程记录
-微积分复习
+- 因式分解的逐步讲解
+- 每一步的可视化展示
+- 可回看的课程记录
+
+#### 微积分复习
+
 用户搜索导数或积分相关题目，然后：
 
-比较相似题型
-生成讲解流程
-将结果保存到学习历史中
-手写作业辅助
+- 比较相似题型
+- 生成讲解流程
+- 将结果保存到学习历史中
+
+#### 手写作业辅助
+
 用户拍摄手写题目或笔记后，可以把它作为：
 
-AI 识别入口
-解题规划入口
-未来视频讲解生成入口
-个性化学习模式
+- AI 识别入口
+- 解题规划入口
+- 未来视频讲解生成入口
+
+#### 个性化学习模式
+
 初学者可以选择更慢、更详细的讲解方式，而进阶用户可以选择更紧凑的复习模式。
 
-当前页面结构
-Dashboard
+### 当前页面结构
 
-新建讲解入口
-上传区域
-搜索区
-活跃任务区
-推荐内容区
-Collections
+- `Dashboard`
+  - 新建讲解入口
+  - 上传区域
+  - 搜索区
+  - 活跃任务区
+  - 推荐内容区
 
-个人数学题库
-题目筛选
-推荐题目浏览
-Study History
+- `Collections`
+  - 个人数学题库
+  - 题目筛选
+  - 推荐题目浏览
 
-已生成讲解内容
-学习进度
-视频回看操作
-Settings
+- `Study History`
+  - 已生成讲解内容
+  - 学习进度
+  - 视频回看操作
 
-用户学习档案
-学习层级设置
-讲解风格与深度设置
-技术栈
-React 19
-TypeScript
-Vite
-React Router
-Tailwind CSS
-Lucide React
-Motion
-Gemini SDK (@google/genai)
-当前状态
-已实现
-多页面前端界面
-新建数学题讲解入口
-收藏与题库管理界面
-学习历史界面
-个性化设置界面
-面向视频生成任务的产品结构
-计划接入
-手写数学 OCR
-数学题解析
-讲解规划
-步骤化讲解结构生成
-数学可视化渲染
-视频生成能力
-用户数据持久化
+- `Settings`
+  - 用户学习档案
+  - 学习层级设置
+  - 讲解风格与深度设置
+
+### 技术栈
+
+- React 19
+- TypeScript
+- Vite
+- React Router
+- Tailwind CSS
+- Lucide React
+- Motion
+- Gemini SDK (`@google/genai`)
+
+### 当前状态
+
+#### 已实现
+
+- 多页面前端界面
+- 新建数学题讲解入口
+- 收藏与题库管理界面
+- 学习历史界面
+- 个性化设置界面
+- 面向视频生成任务的产品结构
+
+#### 计划接入
+
+- 手写数学 OCR
+- 数学题解析
+- 讲解规划
+- 步骤化讲解结构生成
+- 数学可视化渲染
+- 视频生成能力
+- 用户数据持久化
+
 因此，这个仓库目前更准确的定位是：
 
 一个面向“数学题讲解视频产品”的前端原型。
 
-本地运行
-前置要求
-Node.js
-npm
-安装依赖
-npm install
-配置环境变量
-创建 .env.local 文件：
+### 本地运行
 
+#### 前置要求
+
+- Node.js
+- npm
+
+#### 安装依赖
+
+```bash
+npm install
+```
+
+#### 配置环境变量
+
+创建 `.env.local` 文件：
+
+```bash
 GEMINI_API_KEY=your_gemini_api_key
 APP_URL=http://localhost:3000
-参考 .env.example。
+```
 
-启动开发环境
+参考 `.env.example`。
+
+#### 启动开发环境
+
+```bash
 npm run dev
+```
+
 默认访问地址：
 
+```bash
 http://localhost:3000
-生产构建
+```
+
+#### 生产构建
+
+```bash
 npm run build
-本地预览构建结果
+```
+
+#### 本地预览构建结果
+
+```bash
 npm run preview
-可用脚本
-npm run dev
-启动本地开发服务器
+```
 
-npm run build
-生成生产构建
+### 可用脚本
 
-npm run preview
-本地预览构建结果
+- `npm run dev`  
+  启动本地开发服务器
 
-npm run clean
-清理构建目录
+- `npm run build`  
+  生成生产构建
 
-npm run lint
-执行 TypeScript 类型检查
+- `npm run preview`  
+  本地预览构建结果
 
-项目结构
+- `npm run clean`  
+  清理构建目录
+
+- `npm run lint`  
+  执行 TypeScript 类型检查
+
+### 项目结构
+
+```text
 src/
   components/
     Layout.tsx
@@ -446,32 +587,44 @@ src/
   App.tsx
   main.tsx
   index.css
-路线图
+```
+
+### 路线图
+
 下一步可以继续推进：
 
-接入图片上传 OCR
-增加数学题解析模块
-生成结构化讲解计划
-把讲解步骤转成数学可视化
-接入视频生成后端
-将生成结果写入学习历史
-增加教师和学生协作场景
-贡献方式
+- 接入图片上传 OCR
+- 增加数学题解析模块
+- 生成结构化讲解计划
+- 把讲解步骤转成数学可视化
+- 接入视频生成后端
+- 将生成结果写入学习历史
+- 增加教师和学生协作场景
+
+### 贡献方式
+
 欢迎贡献。
 
 如果你想参与这个项目，可以从这些方向入手：
 
-UI 优化
-可访问性改进
-移动端适配
-后端接入
-数学讲解工作流设计
-讲解视频生成链路集成
+- UI 优化
+- 可访问性改进
+- 移动端适配
+- 后端接入
+- 数学讲解工作流设计
+- 讲解视频生成链路集成
+
 推荐流程：
 
-Fork 仓库
-新建功能分支
-提交修改
-发起 Pull Request
-License
+1. Fork 仓库
+2. 新建功能分支
+3. 提交修改
+4. 发起 Pull Request
+
+### License
+
 请在这里补充你希望使用的开源协议。
+
+### 致谢
+
+该项目最初基于 AI Studio 模板搭建，随后扩展为一个面向数学学习与讲解视频生成方向的前端概念验证项目。
