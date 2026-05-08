@@ -1,0 +1,8 @@
+{
+  "name": "Radiant Intellect",
+  "description": "A digital curator for scholarly intelligence, providing AI-powered academic research, problem-solving, and personalized learning paths.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
