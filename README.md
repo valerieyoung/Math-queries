@@ -10,7 +10,7 @@ An AI-powered frontend prototype for turning math problems into structured, visu
 
 ### Overview
 
-Radiant Intellect is a frontend prototype for a math explanation video platform.
+Math Queries is a frontend prototype for a math explanation video platform.
 
 Instead of behaving like a generic chatbot, it is designed as a structured learning workspace where users can:
 
@@ -36,7 +36,7 @@ This repository currently focuses on the frontend experience for that workflow.
 
 Most AI math tools stop at giving an answer.
 
-Radiant Intellect is built around a different goal:
+Math Queries is built around a different goal:
 
 - explain the reasoning step by step
 - make the explanation visual
@@ -322,7 +322,7 @@ Originally scaffolded from an AI Studio app template and expanded into a math-fo
 
 ### 项目简介
 
-Radiant Intellect 是一个面向“数学题讲解视频平台”的前端原型。
+Math Queries 是一个面向“数学题讲解视频平台”的前端原型。
 
 它不是一个普通聊天机器人页面，而是一个更偏结构化学习工作台的产品形态。用户可以在这里：
 
@@ -348,7 +348,7 @@ Radiant Intellect 是一个面向“数学题讲解视频平台”的前端原�
 
 很多 AI 数学工具只停留在“给答案”。
 
-Radiant Intellect 想解决的是另一类问题：
+Math Queries 想解决的是另一类问题：
 
 - 按步骤讲清楚推理过程
 - 用更可视化的方式呈现讲解
